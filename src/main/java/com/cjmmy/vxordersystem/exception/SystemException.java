@@ -12,4 +12,8 @@ public class SystemException extends RuntimeException{
         this.code = enums.getCode();
     }
 
+    public SystemException(Integer code, String defaultMessage) {
+        super(defaultMessage);
+        this.code = code;
+    }
 }

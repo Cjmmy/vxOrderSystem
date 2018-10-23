@@ -4,6 +4,8 @@ import lombok.Getter;
 
 @Getter
 public enum ExceptionStatusEnums {
+    CART_EMPTY_ERROR(2,"购物车是空的"),
+    PARAM_ERROR(1,"参数错误"),
     PRODUCT_NOT_EXIT(44,"商品不存在"),
     STOCK_NOT_ENOUGH(40,"商品数量不足"),
     ORDER_NOT_EXIT(54,"查询订单不存在"),

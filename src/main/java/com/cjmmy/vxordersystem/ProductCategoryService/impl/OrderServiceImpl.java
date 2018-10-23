@@ -60,13 +60,14 @@ public class OrderServiceImpl implements OrderService {
 //        遍历每一件商品产看商品是否存在，计算订单总金额
         for (OrderDetail orderDetail : orderDetailList) {
             ProductInfo productInfo = productInfoService.findOne(orderDetail.getProductId());
-//            int stock = productInfo.getProductStock();
-//            if(stock<orderDetail.getProductQuantity()){
-//                throw new SystemException(ExceptionStatusEnums.STOCK_NOT_ENOUGH);
-//            }
-//            stock = stock - orderDetail.getProductQuantity();
-//            productInfo.setProductStock(stock);
-//            productInfoRepository.save(productInfo);
+//
+            //int stock = productInfo.getProductStock();
+            //if(stock<orderDetail.getProductQuantity()){
+            //throw new SystemException(ExceptionStatusEnums.STOCK_NOT_ENOUGH);
+            //}
+            //stock = stock - orderDetail.getProductQuantity();
+            //productInfo.setProductStock(stock);
+            //productInfoRepository.save(productInfo);
             if (productInfo == null) {
                 throw new SystemException(ExceptionStatusEnums.PRODUCT_NOT_EXIT);
             }
