@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: '071369'
+    url: jdbc:mysql:///vxordersystem?characterEncoding=utf-8&useSSL=false
+  ###配置数据库
+  jpa:
+    show-sql: true
+    hibernate:
+      use-new-id-generator-mappings: false
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+###配置访问路径项目的名称
+server:
+  servlet:
+    context-path: /vxordersystem
