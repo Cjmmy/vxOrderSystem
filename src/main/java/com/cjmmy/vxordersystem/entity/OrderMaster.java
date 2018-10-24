@@ -31,9 +31,9 @@ public class OrderMaster {
 //    订单金额
     private BigDecimal orderAmount;
 //    订单状态 ，有默认值，用枚举表示
-    private int orderStatus = OrderStatusEnums.NEW.getCode();
+    private Integer orderStatus = OrderStatusEnums.NEW.getCode();
 //    支付状态，有默认值，用枚举表示
-    private int payStatus = PayStatusEnums.WAIT.getCode();
+    private Integer payStatus = PayStatusEnums.WAIT.getCode();
 //    订单创建时间
     @JsonSerialize(using = Date2LongSerializer.class)
     private Date createTime;

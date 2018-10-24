@@ -1,4 +1,4 @@
-package com.cjmmy.vxordersystem.ProductCategoryService.impl;
+package com.cjmmy.vxordersystem.service.impl;
 
 import com.cjmmy.vxordersystem.dto.OrderDTO;
 import com.cjmmy.vxordersystem.entity.OrderDetail;
@@ -15,7 +15,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.*;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @Slf4j

@@ -1,6 +1,7 @@
 package com.cjmmy.vxordersystem.controller;
 
-import com.cjmmy.vxordersystem.ProductCategoryService.impl.OrderServiceImpl;
+import com.cjmmy.vxordersystem.service.impl.BuyerServiceImpl;
+import com.cjmmy.vxordersystem.service.impl.OrderServiceImpl;
 import com.cjmmy.vxordersystem.VO.ResultVO;
 import com.cjmmy.vxordersystem.dto.OrderDTO;
 import com.cjmmy.vxordersystem.enums.ExceptionStatusEnums;
@@ -27,7 +28,8 @@ import java.util.Map;
 public class BuyerOrderController {
     @Autowired
     private OrderServiceImpl orderService;
-
+    @Autowired
+    private BuyerServiceImpl buyerService;
     /**
      * 创建订单
      * @param orderForm
@@ -82,7 +84,7 @@ public class BuyerOrderController {
     public ResultVO<OrderDTO> detail(@RequestParam("openid") String openid,
                                      @RequestParam("orderId") String orderid){
         //TODO 这样查不安全 后续完成
-        OrderDTO orderDTO = orderService.findOne(orderid);
+        OrderDTO orderDTO = buyerService.findOrderOne(openid, orderid);
         return ResultVOUtil.success(orderDTO);
     }
 
@@ -95,8 +97,7 @@ public class BuyerOrderController {
     @PostMapping("cancel")
     public ResultVO cancel(@RequestParam("openid") String openid,
                            @RequestParam("orderId") String orderId){
-        OrderDTO orderDTO = orderService.findOne(orderId);
-        orderService.cancel(orderDTO);
+        buyerService.cancelOrder(openid, orderId);
         return ResultVOUtil.success();
     }
 }

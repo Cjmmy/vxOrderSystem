@@ -20,7 +20,7 @@ public class OrderDetail {
 //    商品价格
     private BigDecimal productPrice;
 //    购买数量
-    private int productQuantity;
+    private Integer productQuantity;
 //    商品小图
     private String productIcon;
 }

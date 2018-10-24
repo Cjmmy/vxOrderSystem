@@ -1,7 +1,7 @@
 package com.cjmmy.vxordersystem.controller;
 
-import com.cjmmy.vxordersystem.ProductCategoryService.impl.ProductCategoryServiceImpl;
-import com.cjmmy.vxordersystem.ProductCategoryService.impl.ProductInfoServiceImpl;
+import com.cjmmy.vxordersystem.service.impl.ProductCategoryServiceImpl;
+import com.cjmmy.vxordersystem.service.impl.ProductInfoServiceImpl;
 import com.cjmmy.vxordersystem.VO.ProductDetailVO;
 import com.cjmmy.vxordersystem.VO.ProductInfoVO;
 import com.cjmmy.vxordersystem.VO.ResultVO;

@@ -1,6 +1,6 @@
-package com.cjmmy.vxordersystem.ProductCategoryService.impl;
+package com.cjmmy.vxordersystem.service.impl;
 
-import com.cjmmy.vxordersystem.ProductCategoryService.OrderService;
+import com.cjmmy.vxordersystem.service.OrderService;
 import com.cjmmy.vxordersystem.dto.CartDTO;
 import com.cjmmy.vxordersystem.dto.OrderDTO;
 import com.cjmmy.vxordersystem.entity.OrderDetail;

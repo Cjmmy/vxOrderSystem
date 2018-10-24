@@ -1,4 +1,4 @@
-package com.cjmmy.vxordersystem.ProductCategoryService.impl;
+package com.cjmmy.vxordersystem.service.impl;
 
 import com.cjmmy.vxordersystem.entity.ProductCategory;
 import org.junit.Assert;
@@ -10,8 +10,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.Arrays;
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 
 @RunWith(SpringRunner.class)

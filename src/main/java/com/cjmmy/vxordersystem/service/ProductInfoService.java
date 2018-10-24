@@ -1,4 +1,4 @@
-package com.cjmmy.vxordersystem.ProductCategoryService;
+package com.cjmmy.vxordersystem.service;
 
 import com.cjmmy.vxordersystem.dto.CartDTO;
 import com.cjmmy.vxordersystem.entity.ProductInfo;

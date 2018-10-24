@@ -4,6 +4,7 @@ import lombok.Getter;
 
 @Getter
 public enum ExceptionStatusEnums {
+    BUYERID_ERROR(3,"微信账户不正确"),
     CART_EMPTY_ERROR(2,"购物车是空的"),
     PARAM_ERROR(1,"参数错误"),
     PRODUCT_NOT_EXIT(44,"商品不存在"),

@@ -1,6 +1,6 @@
-package com.cjmmy.vxordersystem.ProductCategoryService.impl;
+package com.cjmmy.vxordersystem.service.impl;
 
-import com.cjmmy.vxordersystem.ProductCategoryService.ProductCategoryService;
+import com.cjmmy.vxordersystem.service.ProductCategoryService;
 import com.cjmmy.vxordersystem.entity.ProductCategory;
 import com.cjmmy.vxordersystem.repository.ProductCategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;

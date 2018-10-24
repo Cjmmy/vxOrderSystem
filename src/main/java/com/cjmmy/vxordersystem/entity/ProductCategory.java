@@ -19,9 +19,9 @@ import java.util.Date;
 public class ProductCategory {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int categoryId;
+    private Integer categoryId;
     private String categoryName;
-    private int categoryType;
+    private Integer categoryType;
 
 //    为了解释一个现象，我们根据数据库创建这个成员变量，如果我们在对数据进行更新时，会先查询到在更新，因为update_time成为成员变量，那么我们通过
 //    查询便能获取到数据库中此时数据update_time的值，我们更改数据时因为不会更改这个变量，所以又将原先的update_time值存入覆盖了本应变化的
