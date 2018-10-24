@@ -19,13 +19,13 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.HashMap;
 import java.util.Map;
 
-@RestController
-@RequestMapping(value = "/buyer/order/ ")
 @Slf4j
+@RestController
+@RequestMapping("/buyer/order/")
 public class BuyerOrderController {
     @Autowired
     private OrderServiceImpl orderService;
-    @PostMapping(value = "create")
+    @PostMapping("create")
     public ResultVO<Map<String,String>> create(OrderForm orderForm, BindingResult bindingResult){
 //        如果表单校验有错误，那么要抛出异常
         if(bindingResult.hasErrors()){
