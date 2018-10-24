@@ -10,6 +10,9 @@ spring:
     hibernate:
       use-new-id-generator-mappings: false
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    ###全局配置，如果任何一个返回给前端的对象字段为null，丢弃不显示
+#  jackson:
+#    default-property-inclusion: non_null
 ###配置访问路径项目的名称
 server:
   servlet:

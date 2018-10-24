@@ -4,6 +4,7 @@ import com.cjmmy.vxordersystem.entity.OrderDetail;
 import lombok.Data;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -14,24 +15,26 @@ import java.util.List;
 @Data
 public class OrderDTO {
     private String orderId;
-    //    买家姓名
+    /**买家姓名*/
     private String buyerName;
-    //    买家电话
+    /**买家电话*/
     private String buyerPhone;
-    //    买家地址
+    /**买家地址*/
     private String buyerAddress;
-    //    买家微信号
+    /**买家微信号*/
     private String buyerOpenid;
-    //    订单金额
+    /**订单金额*/
     private BigDecimal orderAmount;
-    //    订单状态
+    /**订单状态*/
     private Integer orderStatus;
-    //    支付状态
+    /**支付状态*/
     private Integer payStatus;
-    //    订单创建时间
+    /**订单创建时间*/
     private Date createTime;
-    //    订单更新时间
+    /**订单更新时间*/
     private Date updateTime;
-//    单个商品订单的详细内容list
+/**单个商品订单的详细内容list
+如果某一个字段在前端是必须的，但是此时他是null，那么会被过滤掉不显示，所以，我们可以通过成员变量赋初值来让前端拿到[]
+ private List<OrderDetail> orderDetailList = new ArrayList<>();*/
     private List<OrderDetail> orderDetailList;
 }

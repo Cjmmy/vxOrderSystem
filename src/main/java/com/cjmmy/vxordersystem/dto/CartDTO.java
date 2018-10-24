@@ -3,7 +3,7 @@ package com.cjmmy.vxordersystem.dto;
 import lombok.Data;
 
 /**
- * 这个类是创建订单时前段传过来的，就两个字段
+ * 这个类是创建订单时前端传过来的，就两个字段
  */
 @Data
 public class CartDTO {

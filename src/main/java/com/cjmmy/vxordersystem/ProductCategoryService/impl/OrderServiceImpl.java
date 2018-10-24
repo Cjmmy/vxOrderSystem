@@ -50,6 +50,7 @@ public class OrderServiceImpl implements OrderService {
      * @param orderDTO
      * @return
      */
+    @Override
     @Transactional
     public OrderDTO createOrder(OrderDTO orderDTO) {
 //        一开始就生成orderId
@@ -124,6 +125,7 @@ public class OrderServiceImpl implements OrderService {
      * @param pageable
      * @return
      */
+    @Override
     public Page<OrderDTO> findList(String buyerOpenId, Pageable pageable) {
         Page<OrderMaster> orderMasterPage = orderMasterRepository.findByBuyerOpenid(buyerOpenId, pageable);
         List<OrderDTO> orderDTOList = TransferUtil.orderMasterList2OrderDTOList(orderMasterPage.getContent());
@@ -134,6 +136,11 @@ public class OrderServiceImpl implements OrderService {
 
     }
 
+    /**
+     * 取消订单
+     * @param orderDTO
+     * @return
+     */
     @Override
     @Transactional
     public OrderDTO cancel(OrderDTO orderDTO) {
